@@ -8,6 +8,12 @@ describe DockingStation do
      expect(docking_station.release_bike).to be_instance_of Bike
    end
 
+   it 'docking station to respond to working?' do
+     bike = Bike.new
+     expect(bike.working?).to eq true
+   end
+
+
   end
 
 #
