@@ -1,14 +1,15 @@
 class DockingStation
 
-  def initialize
-    @storage = []
-  end
+  # def initialize
+  #   @storage = []
+  # end
 
   def release_bike
-    bike = Bike.new
+   Bike.new
   end
 
   def dock(bike)
-    bike
+    @bike = bike
   end
+attr_reader :bike
 end
